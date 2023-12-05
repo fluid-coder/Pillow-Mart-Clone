@@ -1,0 +1,215 @@
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.icon-section i{
+    font-size: 20px;
+}
+.icon-section:hover{
+    cursor: grab;
+}
+.logo-section:hover{
+    cursor: grab;
+}
+.option-section ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: rubik,sans-serif;
+    font-size: 18px;
+}
+.option-section ul li{
+    list-style: none;
+    margin: 18px;
+}
+.option-section ul:hover{
+    color: #4b4630;
+    cursor: grab;
+}
+.options{
+    display: none;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    /* position: relative; */
+}
+.hero .hero-icon{
+    position: absolute;
+    width: 150px;
+    height: 600px;
+    top: 140px;
+    background-color: #b084ad;
+}
+.hero .hero-text{
+    position: relative;
+    display: block;
+    z-index: 1;
+    left: 190px;
+}
+.hero .hero-text h1{
+    font-family: poppins,sans-serif;
+    color: #4b3049;
+    font-size: 60px;
+    margin-bottom: 5px;
+}
+.hero .hero-text p {
+    /* word-wrap: break-word; */
+    width: 510px;
+    font-family: rubik,sans-serif;
+    font-size: 24px ;
+    color: #795376;
+
+}
+.hero .hero-text button {
+    margin-top: 25px;
+    background-color: #b084ad;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-family: rubik,sans-serif;
+    width: 130px;
+    height: 50px;
+    font-size: 16px;
+    transition: 0.2s;
+}
+.hero .hero-text button:hover{
+    cursor: grab;
+    background-color: white;
+    color: #4b3049;
+    border: 2px solid #4b3049;
+    transition: 0.2;
+}
+.hero .hero-img img{
+    width: 700px;
+    height: 580px;
+    background-size: cover;
+    background-position: center;
+}
+.product{
+    position: relative;
+    display: inline-block;
+}
+.product-content{
+    display: none;
+  position: absolute;
+  background-color: #b084ad;
+  border-radius: 8px;
+  min-width: 180px;
+  font-size: 14px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.product-content li{
+    color: black;
+  /* padding: 6px 6px; */
+  text-decoration: none;
+
+  display: block;
+}
+.product:hover .product-content{
+    display: block;
+}
+.blog{
+    position: relative;
+    display: inline-block;
+}
+.blog-content{
+    display: none;
+  position: absolute;
+  background-color: #b084ad;
+  border-radius: 8px;
+  min-width: 180px;
+  font-size: 14px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.blog-content li{
+    color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+}
+.blog:hover .blog-content{
+    display: block;
+}
+.page{
+    position: relative;
+    display: inline-block;
+}
+.page-content{
+    display: none;
+    position: absolute;
+    background-color: #b084ad;
+    border-radius: 8px;
+    min-width: 180px;
+    font-size: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.page-content li{
+    color: black;
+    /* padding: 12px 16px; */
+    text-decoration: none;
+    display: block;
+}
+.page:hover .page-content{
+    display: block;
+}
+@media only screen and (max-width:900px) {
+    body{
+        .option-section ul{
+            display: none;
+            flex-direction: column;
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+        }
+        .options{
+            display: block;
+        }
+        .hero .hero-text h1{
+            width: 230px;
+            font-size: 36px;
+        }
+        .hero .hero-text p{
+            width: 155px;
+            font-size: 12px;
+        }
+        background-color: bisque;
+    }
+}
+@media only screen and (max-width:1100px){
+    .hero .hero-text h1{
+        width: 285px;
+        font-size: 46px;
+    }
+}
+@media only screen and (max-width:980px) {
+    body{
+        .hero .hero-text p{
+            width: 280px;
+            font-size: 15px;
+        }
+    }
+}
+.next{
+    width: 100%;
+    height: 20px;
+}
